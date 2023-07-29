@@ -1,0 +1,36 @@
+.dashboard-container {
+  margin: 8px;
+}
+
+/* head */
+.dashboard-head {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.dashboard-head-item {
+  position: relative;
+  border-radius: 8px;
+  padding: 8px;
+  margin: 8px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.dashboard-head-item-title {
+  color: var(--secondary-color);
+  font-weight: 500;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.dashboard-head-item-number {
+  font-size: 18px;
+  padding: 12px 0;
+}
+
+.dashboard-head-item-icon {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 12px;
+}

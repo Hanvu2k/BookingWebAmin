@@ -1,0 +1,127 @@
+/* main-content */
+
+.main-body {
+  border-radius: 8px;
+  padding: 8px;
+  margin: 8px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.main-body-title {
+  color: var(--secondary-color);
+  font-weight: 500;
+  margin: 8px;
+}
+
+.main-body-content {
+  margin: 8px;
+  width: 100%;
+}
+
+.content-table {
+  width: 100%;
+  padding: 8px;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+/* headtable */
+.content-table-head {
+}
+
+.content-table-head tr {
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.content-table-head tr td {
+  padding: 8px;
+}
+
+.content-table-head tr td:first-child {
+  padding-left: 16px;
+}
+
+.content-table-head tr td span {
+  margin-right: 4px;
+  color: var(--secondary-color);
+}
+
+/* bodytable */
+.content-table-body tr {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.content-table-body tr td {
+  padding: 8px 8px 8px 16px;
+}
+
+.status {
+  margin: 4px;
+  padding: 4px;
+  color: forestgreen;
+}
+
+.booked {
+  background-color: #f5b8ad;
+  border-radius: 8px;
+}
+
+.checkin {
+  background-color: #39d139;
+  border-radius: 8px;
+}
+
+.checkout {
+  background-color: #dedbfd;
+  border-radius: 8px;
+}
+
+.btn {
+  margin: 8px;
+  padding: 4px;
+}
+
+.btn:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.btn-add {
+  padding: 4px 8px;
+  border: 1px solid #39d139;
+  border-radius: 4px;
+  color: #39d139;
+  background-color: white;
+}
+
+.btn-delete {
+  border: 1px dashed red;
+  color: red;
+  border-radius: 8px;
+}
+
+.btn-edit {
+  border: 1px dashed yellow;
+  color: yellow;
+  border-radius: 8px;
+}
+
+/* tfoot */
+
+tfoot tr {
+  border: 1px solid #ccc;
+  height: 40px;
+  position: relative;
+}
+
+.page {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.page span {
+  margin: 0 8px;
+}

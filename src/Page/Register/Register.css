@@ -1,0 +1,27 @@
+.form-input {
+  width: 200px;
+}
+
+.user-input {
+  gap: 8px;
+}
+
+.user-input input {
+  outline: none;
+  padding: 8px;
+}
+
+.btn-register {
+  background-color: var(--primary-color);
+  border: none;
+  padding: 8px;
+  color: white;
+  cursor: pointer;
+}
+
+a {
+  font-size: 14px;
+  padding: 4px 0;
+  text-align: right;
+  margin-bottom: 8px;
+}
