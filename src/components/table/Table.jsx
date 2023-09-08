@@ -26,7 +26,7 @@ function Table(props) {
     }
     try {
       const res = await fetch(
-        `http://localhost:5000/api/v1/hotel/deleteHotel?token=${token}&hotelId=${hotelId}`,
+        `https://bookingweb-server.onrender.com/api/v1/hotel/deleteHotel?token=${token}&hotelId=${hotelId}`,
         {
           method: "DELETE",
           headers: {
@@ -58,7 +58,7 @@ function Table(props) {
     }
     try {
       const res = await fetch(
-        `http://localhost:5000/api/v1/room/deleteRoom?token=${token}&roomId=${roomId}`,
+        `https://bookingweb-server.onrender.com/api/v1/room/deleteRoom?token=${token}&roomId=${roomId}`,
         {
           method: "DELETE",
           headers: {

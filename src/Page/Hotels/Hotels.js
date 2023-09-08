@@ -9,7 +9,7 @@ function Hotels() {
     const fetchData = async () => {
       try {
         const res = await fetch(
-          `http://localhost:5000/api/v1/hotel/getHotel?token=${token}`
+          `https://bookingweb-server.onrender.com/api/v1/hotel/getHotel?token=${token}`
         );
         const data = await res.json();
         hotelsHandler(data.hotel);

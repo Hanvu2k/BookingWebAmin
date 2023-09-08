@@ -9,7 +9,7 @@ function Rooms() {
     const fetchData = async () => {
       try {
         const res = await fetch(
-          `http://localhost:5000/api/v1/room/getRoom?token=${token}`
+          `https://bookingweb-server.onrender.com/api/v1/room/getRoom?token=${token}`
         );
         const data = await res.json();
         roomsHandler(data.room);

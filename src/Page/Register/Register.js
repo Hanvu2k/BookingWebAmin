@@ -57,7 +57,7 @@ function Register() {
     if (validated()) {
       try {
         const res = await fetch(
-          "http://localhost:5000/api/v1/auth/registerAdmin",
+          "https://bookingweb-server.onrender.com/api/v1/auth/registerAdmin",
           {
             method: "POST",
             headers: {

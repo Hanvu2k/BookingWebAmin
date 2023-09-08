@@ -9,7 +9,7 @@ function Transactions() {
     const fetchData = async () => {
       try {
         const res = await fetch(
-          `http://localhost:5000/api/v1/transaction/getAllTransaction?token=${token}`
+          `https://bookingweb-server.onrender.com/api/v1/transaction/getAllTransaction?token=${token}`
         );
         const data = await res.json();
         transactionsHandler(data.transactions);

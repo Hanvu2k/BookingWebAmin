@@ -88,7 +88,7 @@ function InputForm({
       if (isEditHotel || isAddHotel) return;
       try {
         const res = await fetch(
-          `http://localhost:5000/api/v1/hotel/getHotel?token=${token}`
+          `https://bookingweb-server.onrender.com/api/v1/hotel/getHotel?token=${token}`
         );
         const data = await res.json();
         setHotels(data.hotel);
@@ -105,7 +105,7 @@ function InputForm({
       if (!isAddHotel) return;
       try {
         const res = await fetch(
-          `http://localhost:5000/api/v1/room/getRoom?token=${token}`
+          `https://bookingweb-server.onrender.com/api/v1/room/getRoom?token=${token}`
         );
         const data = await res.json();
         setRooms(data.room.map((room) => room.title));
@@ -122,7 +122,7 @@ function InputForm({
       if (!isEditHotel) return;
       try {
         const res = await fetch(
-          `http://localhost:5000/api/v1/hotel/getHotelById?token=${token}&hotelId=${hotelId}`
+          `https://bookingweb-server.onrender.com/api/v1/hotel/getHotelById?token=${token}&hotelId=${hotelId}`
         );
 
         const hotelData = await res.json();
@@ -140,7 +140,7 @@ function InputForm({
       if (!isEditRoom) return;
       try {
         const res = await fetch(
-          `http://localhost:5000/api/v1/room/getRoomById?token=${token}&roomId=${roomId}`
+          `https://bookingweb-server.onrender.com/api/v1/room/getRoomById?token=${token}&roomId=${roomId}`
         );
 
         const roomData = await res.json();
@@ -204,7 +204,7 @@ function InputForm({
 
     try {
       const res = await fetch(
-        `http://localhost:5000/api/v1/hotel/createHotel?token=${token}`,
+        `https://bookingweb-server.onrender.com/api/v1/hotel/createHotel?token=${token}`,
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -251,7 +251,7 @@ function InputForm({
 
     try {
       const res = await fetch(
-        `http://localhost:5000/api/v1/room/createRoom?token=${token}`,
+        `https://bookingweb-server.onrender.com/api/v1/room/createRoom?token=${token}`,
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -322,7 +322,7 @@ function InputForm({
 
     try {
       const res = await fetch(
-        `http://localhost:5000/api/v1/hotel/updateHotel?token=${token}&hotelId=${hotelId}`,
+        `https://bookingweb-server.onrender.com/api/v1/hotel/updateHotel?token=${token}&hotelId=${hotelId}`,
         {
           method: "PATCH",
           headers: { "Content-Type": "application/json" },
@@ -371,7 +371,7 @@ function InputForm({
 
     try {
       const res = await fetch(
-        `http://localhost:5000/api/v1/room/updateRoom?token=${token}&roomId=${roomId}`,
+        `https://bookingweb-server.onrender.com/api/v1/room/updateRoom?token=${token}&roomId=${roomId}`,
         {
           method: "PATCH",
           headers: { "Content-Type": "application/json" },
